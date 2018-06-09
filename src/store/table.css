@@ -1,0 +1,80 @@
+.table-text-align {
+    text-align: center;
+}
+
+.table-input {
+    width: 100%
+}
+
+.button {
+    position: relative;
+    float: right
+}
+
+.medium-field {
+    max-width: 100%
+}
+
+.table-text-left {
+    text-align: left;
+    width: 400px;
+}
+
+.table-width {
+    max-width: 800px;
+}
+
+.table-bordered {
+    width: 800px;
+    border: 1px solid #dddddd;
+}
+
+.div-width {
+    margin-left: 200px;
+    max-width: 1500px;
+}
+
+.button-width {
+    margin-left: 300px;
+    max-width: 450px;
+}
+
+.rowHeader {
+    background-color: #e2e2e2;
+}
+
+.aui-button .aui-button-primary {
+    background: #3572b0;
+    border-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+}
+
+.aui-button {
+    box-sizing: border-box;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 3.01px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: 14px;
+    font-variant: normal;
+    font-weight: normal;
+    height: 2.14285714em;
+    line-height: 1.42857143;
+    margin: 0;
+    padding: 4px 10px;
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+.aui-button {
+    color: #333;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: button;
+}
