@@ -23,9 +23,9 @@ class App extends Component {
         console.log("params:", params);
         const res = await axios.post('/addapi/apiInfo', params);
         if (res.status === 200) {
-            console.log(res.data)
+            alert("成功")
         }else {
-            console.log(res.status.code)
+            alert("失败")
         }
     };
 
@@ -59,49 +59,49 @@ class App extends Component {
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">用例名称</th>
-                            <input className="table-input" placeholder="如：UserCMS01.1001会员查询消息-正向用例" onChange={this.handleChange} id="remark"/>
+                            <input className="table-input" placeholder="如：UserCMS01.1001会员查询消息-正向用例" id="remark"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">压力测试脚本名称</th>
-                            <input className="table-input" placeholder="gatling压力测试脚本名称，如：userGetMessage" onChange={this.handleChange} id="gatlingTestName"/>
+                            <input className="table-input" placeholder="gatling压力测试脚本名称，如：userGetMessage"  id="gatlingTestName"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">预期Http响应Code</th>
-                            <input className="table-input" placeholder="如：200,204,400等" onChange={this.handleChange} id="status_code"/>
+                            <input className="table-input" placeholder="如：200,204,400等"  id="status_code"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">预期结果</th>
-                            <input className="table-input" placeholder="只能填写Success/Failed，二选一" onChange={this.handleChange} id="expectResult"/>
+                            <input className="table-input" placeholder="只能填写Success/Failed，二选一"  id="expectResult"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">uri</th>
-                            <input className="table-input" placeholder="uri地址，如：/api/v1/cms/Message/playerMessages?access_token=XXXX，带有用户或者子账号token的用【XXXX】代替" onChange={this.handleChange} id="uri"/>
+                            <input className="table-input" placeholder="uri地址，如：/api/v1/cms/Message/playerMessages?access_token=XXXX，带有用户或者子账号token的用【XXXX】代替" id="uri"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">请求方法</th>
-                            <input className="table-input" placeholder="Http请求方法，如：get，post，put，delete等" onChange={this.handleChange} id="httpMethod"/>
+                            <input className="table-input" placeholder="Http请求方法，如：get，post，put，delete等" id="httpMethod"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">请求头</th>
-                            <input className="table-input" placeholder="HttpHeader，如：Content-Type: application/json, Accept: */*" onChange={this.handleChange} id="header"/>
+                            <input className="table-input" placeholder="HttpHeader，如：Content-Type: application/json, Accept: */*" id="header"/>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <th className="table-bordered table-text-left table-width">请求体</th>
-                            <input className="table-input" placeholder='HttpBody，如：{"gameId":"HF_AHK3"}' onChange={this.handleChange} id="setBody"/>
+                            <input className="table-input" placeholder='HttpBody，如：{"gameId":"HF_AHK3"}' id="setBody"/>
                         </td>
                     </tr>
                     </tbody>
